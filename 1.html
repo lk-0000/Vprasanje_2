@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Infografika SWOT Analize: Evropski in Azijski trg</title>
+  <!-- FontAwesome in Google Fonts -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/kTc+FNh4l1+Bi/cqIb2CVb39I1GKnqPrSbEYbG/wqyscHj+ifF8d+pCz/0GL9Yb6Rfy8cFzWFS1wg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <!-- Inline CSS za predstavitev -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #121212;
+      color: #fff;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 10px;
+      position: relative;
+      /* Ozadje z zastavama: Zastava Azije na levi, zastava Evrope na desni */
+      background: url("https://via.placeholder.com/300x600?text=Asia+Flag") left center no-repeat,
+                  url("https://via.placeholder.com/300x600?text=Europe+Flag") right center no-repeat;
+      background-size: 300px auto, 300px auto;
+    }
+    header, footer {
+      text-align: center;
+      margin-bottom: 2em;
+    }
+    header h1 {
+      font-size: 2rem;
+      color: #fff;
+      text-shadow: 0 0 5px #fff;
+      margin-bottom: 0.3em;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+    /* Infografika: Dve glavni koloni */
+    .infographic {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 1;
+    }
+    .market-column {
+      flex: 1;
+      min-width: 300px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      backdrop-filter: blur(2px);
+    }
+    .market-column h2 {
+      margin-bottom: 0.5em;
+      text-transform: uppercase;
+      text-decoration: underline;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .continent-img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .section {
+      margin-bottom: 1.5em;
+    }
+    .section h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.8em;
+      border-bottom: 1px dashed #444;
+      padding-bottom: 0.3em;
+    }
+    .factor {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1em;
+      padding: 10px;
+      border-radius: 6px;
+    }
+    .factor img, .factor svg {
+      width: 48px;
+      height: 48px;
+      margin-right: 10px;
+    }
+    .factor p {
+      font-size: 0.95rem;
+      line-height: 1.3;
+    }
+    /* Barvna kodifikacija */
+    .strengths {
+      background-color: rgba(0, 181, 255, 0.15);
+      border-left: 4px solid #00b5ff;
+    }
+    .weaknesses {
+      background-color: rgba(255, 0, 91, 0.15);
+      border-left: 4px solid #ff005b;
+    }
+    .opportunities {
+      background-color: rgba(0, 255, 133, 0.15);
+      border-left: 4px solid #00ff85;
+    }
+    .threats {
+      background-color: rgba(255, 140, 0, 0.15);
+      border-left: 4px solid #ff8c00;
+    }
+    footer small {
+      font-size: 0.8rem;
+      color: #999;
+    }
+    @media (max-width: 768px) {
+      .infographic {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Infografika SWOT Analize</h1>
+      <p>Vstop na evropski in azijski trg za hipotetično podjetje, ki proizvaja izdelke druge najbolj občutljive vrste</p>
+      <!-- Primer ozadja z diskretno infografiko (lahko zamenjate URL) -->
+      <img src="https://via.placeholder.com/800x150?text=Infografika+SWOT+Analize" alt="Infografika ozadje" style="width:100%; border-radius: 8px; margin-top: 10px;">
+    </header>
+
+    <div class="infographic">
+      <!-- Evropski trg -->
+      <div class="market-column">
+        <h2>
+          <img src="https://via.placeholder.com/50?text=EU" alt="Evropa" class="continent-img">
+          Evropski trg
+        </h2>
+        
+        <!-- Notranji dejavniki -->
+        <div class="section">
+          <h3>Notranji dejavniki</h3>
+          <div class="factor strengths">
+            <img src="https://img.icons8.com/color/48/000000/shield.png" alt="Prednosti">
+            <div>
+              <strong>Prednosti (Strengths):</strong>
+              <p>Visoka kakovost izdelkov, inovativnost in učinkoviti proizvodni procesi.</p>
+            </div>
+          </div>
+          <div class="factor weaknesses">
+            <img src="https://img.icons8.com/color/48/000000/cancel.png" alt="Slabosti">
+            <div>
+              <strong>Slabosti (Weaknesses):</strong>
+              <p>Omejena prilagodljivost zaradi specializacije, visoki stroški proizvodnje in manj izkušenj na trgu.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Zunanji dejavniki -->
+        <div class="section">
+          <h3>Zunanji dejavniki</h3>
+          <div class="factor opportunities">
+            <!-- Lastnoručno ustvarjen simbol za priložnosti: -->
+            <svg class="custom-opportunity" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="#00ff85">
+              <path d="M12 2L19 9h-5v13H10V9H5l7-7z" />
+            </svg>
+            <div>
+              <strong>Priložnosti (Opportunities):</strong>
+              <p>Trendi inovacij in trajnostnosti, stabilno gospodarsko okolje in podpora raziskavam ter razvoju.</p>
+            </div>
+          </div>
+          <div class="factor threats">
+            <img src="https://img.icons8.com/color/48/000000/warning-shield.png" alt="Grožnje">
+            <div>
+              <strong>Grožnje (Threats):</strong>
+              <p>Strogi regulativni okviri, močna konkurenca in morebitne spremembe zakonodaje.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Azijski trg -->
+      <div class="market-column">
+        <h2>
+          <img src="https://via.placeholder.com/50?text=AS" alt="Azija" class="continent-img">
+          Azijski trg
+        </h2>
+        
+        <!-- Notranji dejavniki -->
+        <div class="section">
+          <h3>Notranji dejavniki</h3>
+          <div class="factor strengths">
+            <img src="https://img.icons8.com/color/48/000000/shield.png" alt="Prednosti">
+            <div>
+              <strong>Prednosti (Strengths):</strong>
+              <p>Prilagodljivost, visoka tehnološka raven in kakovost izdelkov.</p>
+            </div>
+          </div>
+          <div class="factor weaknesses">
+            <img src="https://img.icons8.com/color/48/000000/cancel.png" alt="Slabosti">
+            <div>
+              <strong>Slabosti (Weaknesses):</strong>
+              <p>Manjša prepoznavnost blagovne znamke, pomanjkanje lokalnega znanja in višji stroški lokalizacije.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Zunanji dejavniki -->
+        <div class="section">
+          <h3>Zunanji dejavniki</h3>
+          <div class="factor opportunities">
+            <svg class="custom-opportunity" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="#00ff85">
+              <path d="M12 2L19 9h-5v13H10V9H5l7-7z" />
+            </svg>
+            <div>
+              <strong>Priložnosti (Opportunities):</strong>
+              <p>Hitra urbanizacija, rastoči srednji razred in vladne spodbude ter investicijski programi.</p>
+            </div>
+          </div>
+          <div class="factor threats">
+            <img src="https://img.icons8.com/color/48/000000/warning-shield.png" alt="Grožnje">
+            <div>
+              <strong>Grožnje (Threats):</strong>
+              <p>Kompleksna lokalna regulacija, gospodarska nestabilnost in močna lokalna konkurenca.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        <small>
+          Viri: Icons8, FontAwesome, Google Fonts<br>
+          (Diskretna omemba virov za kredibilnost)
+        </small>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>

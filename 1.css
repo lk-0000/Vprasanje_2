@@ -1,0 +1,130 @@
+/* Reset in osnovne nastavitve */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: #121212; /* Temno ozadje */
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Kontejner in osnovna postavitev */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  /* Glava in noga */
+  .header,
+  .footer {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .header h1 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 0.3em;
+    text-shadow: 0 0 5px #fff;
+  }
+  .header p {
+    font-size: 1.1rem;
+    color: #ccc;
+  }
+  .footer p {
+    font-size: 0.9rem;
+    color: #999;
+  }
+  
+  /* SWOT mreža: 2 x 2 */
+  .swot-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+  }
+  
+  /* Skupni slog kvadrantov */
+  .quadrant {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  .quadrant:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  }
+  .quadrant h2 {
+    margin-bottom: 0.5em;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+  
+  /* Posebne barve za vsak kvadrant (neon videz) */
+  .strengths h2 {
+    color: #00f5ff;
+    text-shadow: 0 0 5px #00f5ff, 0 0 10px #00f5ff;
+  }
+  .weaknesses h2 {
+    color: #ff005b;
+    text-shadow: 0 0 5px #ff005b, 0 0 10px #ff005b;
+  }
+  .opportunities h2 {
+    color: #00ff85;
+    text-shadow: 0 0 5px #00ff85, 0 0 10px #00ff85;
+  }
+  .threats h2 {
+    color: #ff8c00;
+    text-shadow: 0 0 5px #ff8c00, 0 0 10px #ff8c00;
+  }
+  
+  /* Podnaslovi za evropski in azijski trg */
+  .region-title {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #ccc;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #444;
+    padding-bottom: 0.3em;
+  }
+  
+  /* Seznami */
+  ul {
+    list-style: none;
+    margin-bottom: 1em;
+    padding-left: 0;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.6em;
+    font-size: 0.95rem;
+    color: #ccc;
+  }
+  li i {
+    margin-right: 8px;
+    font-size: 1.1rem;
+    color: #fff;
+  }
+  
+  /* Prilagoditev za manjše zaslone */
+  @media (max-width: 768px) {
+    .swot-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+    .header h1 {
+      font-size: 1.6rem;
+    }
+  }
+  
